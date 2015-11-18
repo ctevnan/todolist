@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List App</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <!-- Bootstrap Optional Theme-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="todoapp.css">
+     <div class="container-fluid">
+         <h1>To Do List App</h1>
+     </div>
+</head>
+<body>
+ <div class="col-md-12">
+    <div class="row">
+        <div class="col-sm-6"> <!--sidebar content(left)-->
+            <ul>
+               <li><title>Wash car</title></li> <!--title goes here-->
+               <li><div class='deleteMe'>X</div></li> <!-- delete button to delete an item altogether-->
+               <li><label><input type="checkbox"/>Checkbox</label></li> <!-- checkbox to draw a line through title and remove the checkbox for that row-->
+            </ul>   
+          </div>       
+  <div class="col-sm-6"> <!--body content(right)-->
+  <form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputtitle" class="col-sm-6 control-label">Title</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputDeleteRow" class="col-sm-6 control-label">Delete button</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="inputRow" placeholder="Delete Button Row">
+    </div>
+  </div>
+  <div class="form-group">
+   <label for="inputCheckBox" class="col-sm-6 control-label">Checkbox</label>
+    <div class="col-sm-6">
+     <input type="text" class="form-control" id="inputCheckbox" placeholder="Checkbox Row"
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Checkbox
+        </label>
+      </div>
+    </div>
+  <div class="form-group">
+   <label for="inputAddBtn" class="col-sm-6 control-label">Add</label>
+    <div class="col-sm-6">
+      <button type="submit" class="btn btn-default">Add</button>
+    </div>
+  </div>
+</form>  
+        </div>
+    </div>
+</div>
+ <!-- JQuery Script (Required for JavaScript Below)-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <!-- JavaScript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/javascript" href="todoapp.js">
+</body>
+</html>
