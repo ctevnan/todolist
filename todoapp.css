@@ -3,25 +3,23 @@ html,body,.col-md-12,.row {
 }
 .row > div {
   height:100%;
-}
-  
+} 
 /* to make delete buttons */
 ul li{
     list-style: none;
     background: gray;
-    font-size:15px;
     margin:0 0 10px;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 .deleteMe{
-    float: right;
-    background: yellow;
-}
+  float:right;
+  background: red;
+}    
 
 /* to make checkboxes */
-label {
- border:1px solid #ccc;
+label{
+ border:3px solid #ccc;
  padding:10px;
  margin:0 0 10px;
  display:block; 
@@ -32,9 +30,9 @@ label:hover {
 }  
   
 /* to make columns visible */
-.row .col-sm-6 {
+.row .col-md-6 {
   background-color:#eee;
 }
-.row .col-sm-6 {
+.row .col-md-6 {
   background-color:#ddd;
 }
