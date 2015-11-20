@@ -24,9 +24,9 @@
  <div class="col-md-12"></div>
  <div class="col-md-6"></div>
     <ul>
-       <li>Wash car<div class='deleteMe'>X</div></li> <!--title-->
-       <li>Delete<div class='deleteMe'>X</div></li>  <!--row with delete button-->
-       <li>Checkbox<input type="checkbox"/></li> <!--clicking checkbox needs to draw line through title AND remove the checkbox for that row NEEDS WORK-->
+       <li>Wash car</li> <!--title-->
+       <li><button type="delete" value="Delete">Delete</button></li>  <!--row with delete button-->
+       <li><input type="checkbox"></li> <!--clicking checkbox needs to draw line through title AND remove the checkbox for that row NEEDS WORK-->
     </ul>
           </div>
          </div> 
@@ -37,25 +37,25 @@
   <div class="form-group">
     <label for="inputtitle" class="col-md-6 control-label">Title</label>
       <div class="col-md-6">
-       <input type="text" class="form-control" id="inputTitle" placeholder="Add the title of your new 'to do' here">
+       <input type="text" class="form-control" id="inputTitle" placeholder="(Add the title of your new 'to do' here)">
       </div>
   </div>
   <div class="form-group">
     <label for="inputDeleteRow" class="col-md-6 control-label">Delete</label>
      <div class="col-md-6">
-      <input type="text" class="form-control" id="inputRow" placeholder="This is the delete row">
+      <input type="text" class="form-control" id="inputRow" placeholder="(This is the delete row)">
     </div>
   </div>
   <div class="form-group">
    <label for="inputCheckBox" class="col-md-6 control-label">Checkbox</label>
         <div class="col-md-6">
-          <input type="text" class="form-control" id="inputRow" input type="checkbox">
+          <input type="checkbox">
         </div>
       </div>
     <div class="form-group">
      <label for="inputAddBtn" class="col-md-6 control-label">Add</label>
          <div class="col-md-6">
-            <input type="button" class="form-control" id="inputRow" input type="submit" class="btn btn-info" value="Submit Button">
+            <button type="submit" value="Submit">Submit</button>
         </div>
      </div> 
 </form>  
