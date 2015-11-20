@@ -3,67 +3,79 @@
 <head>
   <title>To Do List App</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-  <!-- Bootstrap Optional Theme-->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="todoapp.css">
-     <div class="container">
-        <h1>Welcome To Your To Do List App</h1>
-     </div>
+    <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to Your to Do List</h1>
+         <p>This is a simple application to help you with keeping organized throughout the day.</p>
+           <div class="row">
+             <div class="col-xs-6 col-md-3">
+               <a href="#" class="thumbnail">
+                <img src="http://cache1.asset-cache.net/xd/1392-57.jpg?v=1&c=IWSAsset&k=2&d=C346AAA23973F87BDB2115FC0903371473E7DAAD5CA538697352E015987A76042A8A6008CDFCB3C1" alt="http://www.longtrainproductions.com/wp-content/uploads/2010/05/feature-thumbs-up.gif">
+                </a>
+              </div>
+           </div>
+    </div>
+    </div>
 </head>
 <body>
- <div class="container">
- <div class="row">
+ <div class="container-fluid">
+ <div class="row-fluid">
  <div class="col-md-12"></div>
- <div class="col-md-6"> <!--sidebar content(left)-->
+ <div class="col-md-6"></div>
     <ul>
        <li>Wash car<div class='deleteMe'>X</div></li> <!--title-->
        <li>Delete<div class='deleteMe'>X</div></li>  <!--row with delete button-->
-       <li><input type="checkbox"/><label>Checkbox</label></li> <!--clicking checkbox needs to draw line through title AND remove the checkbox for that row NEEDS WORK-->
+       <li>Checkbox<input type="checkbox"/></li> <!--clicking checkbox needs to draw line through title AND remove the checkbox for that row NEEDS WORK-->
     </ul>
           </div>
          </div> 
         </div>   
-  <div class="container">
-  <div class="row">            
-  <div class="col-md-6"> <!--body content(right)-->
+  <div class="row-fluid">            
+  <div class="col-md-12">
   <form class="form-horizontal">
   <div class="form-group">
     <label for="inputtitle" class="col-md-6 control-label">Title</label>
-    <div class="col-md-6">
-      <input type="text" class="form-control" id="inputTitle" placeholder="Title">
-    </div>
+      <div class="col-md-6">
+       <input type="text" class="form-control" id="inputTitle" placeholder="Add the title of your new 'to do' here">
+      </div>
   </div>
   <div class="form-group">
     <label for="inputDeleteRow" class="col-md-6 control-label">Delete</label>
-    <div class="col-md-6">
-      <input type="text" class="form-control" id="inputRow" placeholder="Delete">
+     <div class="col-md-6">
+      <input type="text" class="form-control" id="inputRow" placeholder="This is the delete row">
     </div>
   </div>
   <div class="form-group">
    <label for="inputCheckBox" class="col-md-6 control-label">Checkbox</label>
-    <div class="col-md-6">
-     <input type="text" class="form-control" id="inputCheckbox" placeholder="Checkbox"
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Checkbox
-        </label>
-      </div>
-    </div>
-  <div class="form-group">
-   <label for="inputAddBtn" class="col-md-6 control-label">Add</label>
-    <div class="col-md-6">
-      <button type="submit" class="btn btn-default">Add</button>
-    </div>
-  </div>
-</form>  
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputRow" input type="checkbox">
         </div>
-    </div>
-</div>
+      </div>
+    <div class="form-group">
+     <label for="inputAddBtn" class="col-md-6 control-label">Add</label>
+         <div class="col-md-6">
+            <input type="button" class="form-control" id="inputRow" input type="submit" class="btn btn-info" value="Submit Button">
+        </div>
+     </div> 
+</form>  
+    
+  
  <!-- JQuery Script (Required for JavaScript Below)-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <!-- JavaScript-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/javascript" href="todoapp.js">
   <script src="todolist/jquery/jquery.js"></script> <!--link to jquery file-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/dom.js"></script>
 </body>
+<div class="container-fluid">
+<div class="col-md-12">
+<footer>
+  <p>Posted by: Carolyn Tevnan</p>
+  <p>Contact information: <a href="CarolynTevnan@gmail.com">CarolynTevnan@gmail.com</a>.</p>
+</div>
+</div>  
+</footer>
 </html>

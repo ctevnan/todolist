@@ -30,9 +30,13 @@ label:hover {
 }  
   
 /* to make columns visible */
-.row .col-md-6 {
+.row .col-md-12 {
   background-color:#eee;
 }
-.row .col-md-6 {
+.row .col-md-12 {
   background-color:#ddd;
+}
+footer {
+  background-color:#eee;
+  border:3px solid #ddd;
 }
