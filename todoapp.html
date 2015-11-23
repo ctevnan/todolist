@@ -17,50 +17,56 @@
            </div>
     </div>
     </div>
+<script type="text/javascript">
+  function myFun(j){
+  var checkbox ="checkbox" + j;
+  var mySpan ="mySpan" + j;
+  var msg = checkbox + "  " + mySpan;
+     if(document.getElementById(checkbox).checked){ 
+     document.getElementById(mySpan).style.textDecoration='line-through';
+     }else{
+     document.getElementById(mySpan).style.textDecoration='none';
+}
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#btn1").click(function(){
+        $("ol").append("<li>Appended item</li>");
+    });
+});
+</script>
+
+
 </head>
 <body>
  <div class="container-fluid">
  <div class="row-fluid">
- <div class="col-md-12"></div>
- <div class="col-md-6"></div>
-    <ul>
-       <li>Wash car</li> <!--title-->
-       <li><button type="delete" value="Delete">Delete</button></li>  <!--row with delete button-->
-       <li><input type="checkbox"></li> <!--clicking checkbox needs to draw line through title AND remove the checkbox for that row NEEDS WORK-->
-    </ul>
+ <div class="col-md-12">
+ <div class="col-md-6">
+  <form name=form1 method=post action=check.php>
+     <input type=checkbox  id=checkbox1 value=1 onclick=myFun(1);><span id='mySpan1'>Title</span><br>
+     <input type=checkbox  id=checkbox2 value=2 onclick=myFun(2);><span id='mySpan2'>Delete row</span><br>
+     <input type=checkbox  id=checkbox3 value=3 onclick=myFun(3);><span id='mySpan3'>Checkbox row</span><br>
+  </form>
           </div>
          </div> 
         </div>   
-  <div class="row-fluid">            
-  <div class="col-md-12">
-  <form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputtitle" class="col-md-6 control-label">Title</label>
-      <div class="col-md-6">
-       <input type="text" class="form-control" id="inputTitle" placeholder="(Add the title of your new 'to do' here)">
-      </div>
-  </div>
-  <div class="form-group">
-    <label for="inputDeleteRow" class="col-md-6 control-label">Delete</label>
-     <div class="col-md-6">
-      <input type="text" class="form-control" id="inputRow" placeholder="(This is the delete row)">
-    </div>
-  </div>
-  <div class="form-group">
-   <label for="inputCheckBox" class="col-md-6 control-label">Checkbox</label>
-        <div class="col-md-6">
-          <input type="checkbox">
-        </div>
-      </div>
-    <div class="form-group">
-     <label for="inputAddBtn" class="col-md-6 control-label">Add</label>
-         <div class="col-md-6">
-            <button type="submit" value="Submit">Submit</button>
-        </div>
-     </div> 
-</form>  
-    
-  
+<div class="row-fluid">            
+<div class="col-md-12">
+<ol>
+  <li>Wash car</li>
+  <li>Grocery shop</li>
+  <li>Rake leaves</li>
+</ol>
+<button id="btn1">Append list items</button>
+</div>
+</div>
+
+ 
  <!-- JQuery Script (Required for JavaScript Below)-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
    <!-- JavaScript-->
@@ -74,7 +80,7 @@
 <div class="col-md-12">
 <footer>
   <p>Posted by: Carolyn Tevnan</p>
-  <p>Contact information: <a href="CarolynTevnan@gmail.com">CarolynTevnan@gmail.com</a>.</p>
+  <p>Contact information: <a href="CarolynTevnan@codeoptimal.com">CarolynTevnan@codeoptimal.com</a>.</p>
 </div>
 </div>  
 </footer>

@@ -1,33 +1,3 @@
-html,body,.col-md-12,.row {
-  height:100%;
-}
-.row > div {
-  height:100%;
-} 
-/* to make delete buttons */
-ul li{
-    list-style: none;
-    background: gray;
-    margin:0 0 10px;
-    border-radius: 5px;
-    padding: 5px;
-}
-.deleteMe{
-  float:right;
-  background: red;
-}    
-
-/* to make checkboxes */
-label{
- border:3px solid #ccc;
- padding:10px;
- margin:0 0 10px;
- display:block; 
-}
-label:hover {
- background:#eee;
- cursor:pointer;
-}  
   
 /* to make columns visible */
 .row .col-md-12 {
